@@ -1,0 +1,112 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.todoList, .imageSearch, .colorChanger {
+  width: 33%;  /* Chiếm đều mỗi phần */
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: calc(100vh - 40px);  
+  overflow-y: auto;  
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.colorChanger {
+  text-align: center;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.colorHistory {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.colorHistory li {
+  color: #555;
+  margin: 5px 0;
+}
